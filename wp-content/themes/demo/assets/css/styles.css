@@ -1,0 +1,374 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  background: #32d0b1;
+  padding-top: 3rem !important;
+  margin-bottom: 3.53vw;
+  -webkit-transition: padding 0.2s ease;
+  -moz-transition: padding 0.2s ease;
+  -o-transition: padding 0.2s ease;
+  transition: padding 0.2s ease;
+}
+
+.affix {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+  height: 40px;
+}
+
+.navbar-brand,
+.nav-item-right {
+  position: relative;
+  -webkit-transition: top 0.2s linear;
+  -moz-transition: top 0.2s linear;
+  -o-transition: top 0.2s linear;
+  transition: top 0.2s linear;
+}
+
+.affix .navbar-nav {
+  position: relative;
+  top: -7px;
+}
+
+.affix .navbar-brand,
+.affix .nav-item-right {
+  top: -10rem !important;
+}
+
+.navbar .navbar-brand {
+  top: 10px;
+}
+
+.navbar ul li {
+  padding: 0 25px;
+  height: 14px;
+}
+
+.navbar ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: #000 !important;
+}
+
+.btn-main {
+  padding: 15px 20px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: 0s;
+  position: relative;
+  z-index: 0;
+}
+
+.btn-main:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .2);
+  transition: .3s ease;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn-main:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.home {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  background: #f8f8f8;
+  color: #888;
+}
+
+.home .jumbotron {
+  border-radius: 0;
+  background-color: #32d0b1;
+  height: 620px;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.home .jumbotron .content {
+  color: #fff;
+  padding: 13.34vw 9.38vw 19.8vw;
+}
+
+.home .jumbotron img {
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.section {
+  height: 6vw;
+}
+
+section.content {
+  padding-bottom: 3.5vw;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h1 {
+  font-weight: 400;
+  color: #000;
+}
+
+.gallery .gallery-wrapper {
+  margin-top: 3.125vw;
+  padding: 0 3vw;
+}
+
+.gallery ul {
+  position: relative;
+  z-index: 0;
+}
+
+.gallery ul:before,
+.gallery ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.gallery .gallery-item {
+  text-align: center;
+  width: 90vw;
+  max-width: 640px;
+}
+
+.gallery .gallery-item-1 {
+  position: relative;
+  width: 27.2vw;
+  left: 50%;
+  margin: 0 0 0 -13.6vw;
+  z-index: 19;
+}
+
+.gallery .gallery-item:not(.gallery-item-1) {
+  position: absolute;
+  width: 16.88vw;
+  text-align: left;
+  transition: .4s ease-out;
+}
+
+.gallery .gallery-item-2 {
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -33.07vw;
+  z-index: 18;
+}
+
+.gallery .gallery-item-3 {
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 16.18vw;
+  z-index: 16;
+}
+
+.gallery .gallery-item-4 {
+  right: 0;
+  top: 50%;
+  margin: -4vw 0 0;
+  z-index: 17;
+}
+
+.gallery .gallery-item-5 {
+  left: 0;
+  top: 0;
+  z-index: 15;
+}
+
+.gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .1);
+}
+
+.gallery .gallery-item .gallery-item_wrapper:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .2);
+  transition: .3s ease;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.gallery .gallery-item a:hover .gallery-item_wrapper:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.gallery .gallery-item span {
+  display: inline-block;
+  color: #000;
+  font-size: 1.04vw;
+  line-height: 1;
+  font-weight: 400;
+  transition: .3s ease;
+}
+
+.info-1 {
+  position: relative;
+  margin-bottom: 6.77vw;
+  z-index: 0;
+}
+
+.info-1 h1 {
+  font-weight: 400;
+  color: #000;
+}
+
+.info-1 img {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 1;
+}
+
+.info-2-img {
+  padding: 1.56vw 2.34vw 2.34vw;
+  position: relative;
+}
+
+.info-2-img-1 {
+  position: relative;
+  left: 50%;
+  margin-left: -12.76vw;
+  width: 25.52vw;
+  z-index: 3;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .1);
+}
+
+.info-2-img-2 {
+  margin-left: -12vw;
+  width: 20vw;
+  z-index: 2;
+}
+
+.info-2-img-3 {
+  margin-left: 15vw;
+  width: 24vw;
+  z-index: 1;
+}
+
+.footer-content {
+  height: 442px;
+  background: #32d0b1;
+  position: relative;
+  z-index: 0;
+}
+
+.footer-content_text {
+  text-align: center;
+  padding: 5vw 5vw 5vw 30vw;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-content_text span {
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.footer-content .mockup-2 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 300;
+  color: #777;
+  padding: 38px 10vw 30px;
+  margin: 0;
+  border-top: none;
+  text-align: center;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  display: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 5px 27px rgba(0, 0, 0, .09);
+  color: #cec7c7;
+  border-radius: 50%;
+  transition: .3s ease;
+  z-index: 12;
+}
+
+.scrollToTop:hover {
+  color: #fff;
+  background: #32d0b1 !important;
+}

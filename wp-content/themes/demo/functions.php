@@ -1,3 +1,3 @@
 <?php
 
-require_once 'include/demo.php';
+require_once 'include/DemoTheme.php';
